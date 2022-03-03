@@ -1,6 +1,8 @@
 .button-group {
   z-index: 1;
-  margin-left: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 100px;
 }
 
 .button-up:hover .button-up {
