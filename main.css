@@ -1,0 +1,8 @@
+.button-group {
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.button-up:hover .button-up {
+  color: red;
+}
