@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GeoAR.js demo</title>
@@ -11,10 +12,13 @@
       THREEx.ArToolkitContext.baseURL =
         "https://raw.githack.com/jeromeetienne/ar.js/master/three.js/";
     </script>
-    <link rel="stylesheet" type="text/css" href="./main.css" />
   </head>
 
   <body style="margin: 0; overflow: hidden">
+    <div class="button-group">
+      <button class="button-up">UP</button>
+      <button class="button-down">DOWN</button>
+    </div>
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
@@ -28,10 +32,6 @@
         animation-mixer
       />
       <a-camera gps-camera rotation-reader></a-camera>
-      <div class="button-group">
-        <button class="button-up">UP</button>
-        <button class="button-down">DOWN</button>
-      </div>
     </a-scene>
   </body>
 </html>
