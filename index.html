@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GeoAR.js demo</title>
@@ -14,6 +15,10 @@
   </head>
 
   <body style="margin: 0; overflow: hidden">
+    <div class="button-group">
+      <button class="button-up">UP</button>
+      <button class="button-down">DOWN</button>
+    </div>
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
@@ -21,8 +26,8 @@
     >
       <a-entity
         gltf-model="./assets/magnemite/scene.gltf"
-        rotation="0 180 0"
-        scale="0.15 0.15 0.15"
+        rotation="90 0 0"
+        scale="0.05 0.05 0.5"
         gps-entity-place="longitude: 12.489820; latitude: 41.892590;"
         animation-mixer
       />
